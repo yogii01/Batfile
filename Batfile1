@@ -5,7 +5,6 @@ pipeline {
         stage('Hello.bat') {
             steps {
                 bat "Hello World"
-                powershell "Hello.bat"
             }
         }
     }
