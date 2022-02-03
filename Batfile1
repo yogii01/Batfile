@@ -1,11 +1,6 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Hello.bat') {
-            steps {
-                bat "Hello World"
-            }
-        }
+node ('Slave1'){
+    stage ('Build on Slave1'){
+        echo 'Running on Slave1'
+        sh 'hostname; touch file.Slave1'
     }
 }
